@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Slider</title>
+    </head>
+    <style type="text/css">
+        #slider{
+            overflow: hidden;
+        }
+        #slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+
+        #slider figure img{
+            margin-left: 100px;
+            width: 1200px;
+        }
+
+        .heading{
+            margin-top: 5%;
+            margin-left: 43%;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: blue;
+
+        }
+
+        .quote{
+            color: red;
+            margin-top: 15px;
+            margin-left: 48%;
+        }
+
+        .round{
+            z-index: 10;
+            position: absolute;
+            margin-top: 10%;
+            margin-left: 48%;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .arrow{
+            position: relative;
+            margin-top: 15px;
+            margin-left: 20px;
+            width: 50px;
+            height: 50px;
+            color: white;
+            border-radius: 25px;
+        }
+
+        #count{
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+    
+    <body>
+        <div class="heading">Take a Look Around</div>
+        <div class="quote">View 3d Tour</div>
+        <div class="round" onclick="clickme()">
+            <div class="arrow">></div>
+        </div>
+        <div id="slider">
+            <figure>
+                <img width="500px" height="500px" src="Images/audi.jpg">
+                <img width="500px" height="500px" src="Images/bmw.jpg">
+                <img width="500px" height="500px" src="Images/kia.jpg">
+                <img width="500px" height="500px" src="Images/merc1.jpg">
+                <img width="500px" height="500px" src="Images/suzuki.jpg">
+            </figure>
+        </div>
+        <div id="count">1</div>
+    </body>
+</html>
